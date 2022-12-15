@@ -68,7 +68,7 @@ const ProjectCard = ({
         <Flex width="100%">
           <Box flex="1">
             <Text fontSize="2xl" fontWeight="semibold">
-              صور <b>{project.instanceName}</b>{" "}
+              شخصية <b>{project.instanceName}</b>{" "}
               {isReady && (
                 <Badge colorScheme="teal">{project.credits} صور متبقية</Badge>
               )}

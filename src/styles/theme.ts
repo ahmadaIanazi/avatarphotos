@@ -33,7 +33,7 @@ const theme = extendTheme({
           transition: "all 0.2s",
           bg: "brand.500",
           color: "blackAlpha.700",
-          shadow: "#f7d0dc",
+          shadow: "lg",
           borderWidth: "1px",
           borderColor: "blackAlpha.100",
           _hover: {
@@ -48,7 +48,7 @@ const theme = extendTheme({
           transition: "all 0.2s",
           bg: "brand.500",
           color: "blackAlpha.700",
-          shadow: "#f7d0dc",
+          shadow: "lg",
           borderWidth: "1px",
           borderColor: "blackAlpha.100",
           _hover: {

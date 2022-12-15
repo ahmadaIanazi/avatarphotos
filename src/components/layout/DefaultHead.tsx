@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
+
 const description = "Create awesome AI avatars";
 const title = "Wojoh - AI Avatar generator";
 const image = "../../../public/og-cover.png";

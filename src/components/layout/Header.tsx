@@ -3,7 +3,6 @@ import {
   Flex,
   HStack,
   Icon,
-  Image,
   IconButton,
   Popover,
   Text,
@@ -11,9 +10,11 @@ import {
 } from "@chakra-ui/react";
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import Image from 'next/image';
 import React from "react";
 import { HiLogout } from "react-icons/hi";
 import { IoIosFlash } from "react-icons/io";
+import favicon from '../../../public/favicon.png';
 
 const Header = () => {
   const { data: session } = useSession();
@@ -35,8 +36,8 @@ const Header = () => {
           fontWeight="bold"
           fontSize="2xl"
         >
-          <Image src="../../../public/favicon.png"/>
-          <Text display={{ base: 'none', sm: 'inherit' }}>Wojoh.</Text>
+          <Image src={favicon} width={30} height={30} alt="Wojoh logo" />
+          <Text display={{ base: 'none', sm: 'inherit' }}>وجوه</Text>
         </Flex>
         {session ? (
           <HStack>
