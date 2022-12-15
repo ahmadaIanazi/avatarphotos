@@ -50,7 +50,7 @@ const FormPayment = ({
         <Box>
           <Spinner speed="1s" size="xl" />
           <Text mt={2} size="sm">
-            Validating payment
+            التحقق من الدفع
           </Text>
         </Box>
       ) : (
@@ -64,23 +64,21 @@ const FormPayment = ({
               color="coolGray.400"
               fontSize="1.2rem"
             >
-              / studio
+              / شخصية
             </Box>
           </Box>
           <Box fontWeight="bold" fontSize="xl">
-            Your Studio is ready to be trained!
+            الشخصية جاهزة للبدأ
           </Box>
           <List textAlign="left" spacing={1}>
             <CheckedListItem>
-              <b>1</b> Studio with a <b>custom trained model</b>
+              <b>1</b> نموذج ذكاء اصنطاعي <b>لشخصية خاصه بك</b>
             </CheckedListItem>
             <CheckedListItem>
-              <b>{process.env.NEXT_PUBLIC_STUDIO_SHOT_AMOUNT}</b> images
-              generation (512x512 resolution)
+              <b>{process.env.NEXT_PUBLIC_STUDIO_SHOT_AMOUNT}</b> صورة للإنشاء بدقة 512x512
             </CheckedListItem>
             <CheckedListItem>
-              Your Studio will be deleted 24 hours after your credits are
-              exhausted
+              سيتم حذف الشخصية بعد ٢٤ ساعة في حالة إنتهاء المبلغ الخاص بك
             </CheckedListItem>
           </List>
           <Button
@@ -88,7 +86,7 @@ const FormPayment = ({
             variant="brand"
             href={`/api/checkout/session?ppi=${project.id}`}
           >
-            Unlock Now - {formatStudioPrice()}
+            قم بإنشاء الشخصية الآن - {formatStudioPrice()}
           </Button>
           <Box pt={4}>
             <AvatarGroup size="md" max={10}>

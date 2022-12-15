@@ -68,9 +68,9 @@ const ProjectCard = ({
         <Flex width="100%">
           <Box flex="1">
             <Text fontSize="2xl" fontWeight="semibold">
-              Studio <b>{project.instanceName}</b>{" "}
+              صور <b>{project.instanceName}</b>{" "}
               {isReady && (
-                <Badge colorScheme="teal">{project.credits} shots left</Badge>
+                <Badge colorScheme="teal">{project.credits} صور متبقية</Badge>
               )}
             </Text>
             <Text textTransform="capitalize" fontSize="sm">
@@ -98,7 +98,7 @@ const ProjectCard = ({
           <>
             <VStack overflow="hidden" width="100%" spacing={4}>
               <Box fontWeight="bold" fontSize="xl">
-                Your Studio is ready to be trained!
+                شخصيتك جاهزة للبدأ بصنع نموذج الذكاء الاصنطاعي عليها !
               </Box>
               <AvatarGroup size="lg" max={10}>
                 {project.imageUrls.map((url) => (
@@ -113,7 +113,7 @@ const ProjectCard = ({
                   trainModel(project);
                 }}
               >
-                Start Training
+                أبدأ بصنع النموذج للشخصية
               </Button>
             </VStack>
           </>
@@ -124,8 +124,8 @@ const ProjectCard = ({
             <VStack spacing={7}>
               {!project.shots ? (
                 <Box fontSize="lg">
-                  {`You don't have any prompt yet`}.{" "}
-                  <b>Go to your studio to add one !</b>
+                  {`لم تكتب أي نص `}.{" "}
+                  <b>إذهب إلى شخصيتك وأكتب النص الآن !</b>
                 </Box>
               ) : (
                 <AvatarGroup size="xl" max={10}>
@@ -142,7 +142,7 @@ const ProjectCard = ({
                 href={`/studio/${project.id}`}
                 as={Link}
               >
-                View my Studio
+                أعرض الشخصية
               </Button>
             </VStack>
           </Center>
@@ -154,9 +154,8 @@ const ProjectCard = ({
           <VStack spacing={7}>
             <Spinner size="xl" speed="2s" />
             <Text textAlign="center" maxW="20rem">
-              The studio is creating{" "}
-              <b>the custom model based on your uploaded photos</b>. This
-              operation usually takes ~20min.
+              يتم العمل على نموذج{" "}
+              <b>الشخصية بناء على الصور التي أرفقتها</b>. هذه العملية تستغرق الكثير من الوقت قرابة ٢٠ دقيقة 
             </Text>
           </VStack>
         </Center>
@@ -165,8 +164,7 @@ const ProjectCard = ({
       {project.modelStatus === "failed" && (
         <Center marginX="auto">
           <Text my={10} color="red.600" textAlign="center">
-            We are sorry but the creation of the model failed. Please contact us
-            by email so we can fix it/refund you.
+نأسف، هناك خطأ في صنع النموذج للشخصية، تستطيع التجربة مرة أخرى ونرجوا منك التواصل معنا على الإيميل لإرجاع المبلغ لك أو إصلاحها
           </Text>
         </Center>
       )}

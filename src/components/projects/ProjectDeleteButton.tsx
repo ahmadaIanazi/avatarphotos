@@ -29,7 +29,7 @@ const ProjectDeleteButton = ({
     {
       onSuccess: () => {
         toast({
-          title: "Studio deleted",
+          title: "تم حذف الشخصية",
           duration: 3000,
           isClosable: true,
           position: "top-right",
@@ -54,14 +54,14 @@ const ProjectDeleteButton = ({
           </PopoverTrigger>
           <PopoverContent fontSize="sm">
             <PopoverArrow />
-            <PopoverHeader fontWeight="bold">Confirmation</PopoverHeader>
+            <PopoverHeader fontWeight="bold">تأكيد</PopoverHeader>
             <PopoverBody>
-              Are you sure you want to delete this studio and training images?
+              هل أنت متأكد من رغبتك في حذف هذه الصور والشخصية تماماً ؟
             </PopoverBody>
             <PopoverFooter display="flex" justifyContent="flex-end">
               <ButtonGroup size="sm">
                 <Button onClick={onClose} variant="outline">
-                  Cancel
+                  إلغاء
                 </Button>
                 <Button
                   colorScheme="red"
@@ -70,7 +70,7 @@ const ProjectDeleteButton = ({
                   }}
                   isLoading={isLoading}
                 >
-                  Delete
+                  حذف
                 </Button>
               </ButtonGroup>
             </PopoverFooter>

@@ -23,7 +23,7 @@ export default function Home() {
     <PageContainer>
       <Box>
         <Heading as="h2" mb={4} fontWeight="semibold" fontSize="2xl">
-          أصنع ستديو خاص جديد
+          أصنع شخصية خاصة جديدة
         </Heading>
         <Uploader
           handleOnAdd={() => {
@@ -34,7 +34,7 @@ export default function Home() {
 
       <Box mt={10}>
         <Heading as="h2" mb={4} fontWeight="semibold" fontSize="2xl">
-          أستديواتي الخاصه
+          شخصياتي
         </Heading>
 
         {isLoading && (
@@ -53,7 +53,7 @@ export default function Home() {
             color="blackAlpha.700"
             textAlign="center"
           >
-            <Text backgroundColor="white">لا يوجد استديو خاص بك</Text>
+            <Text backgroundColor="white">لا يوجد شخصية خاص بك</Text>
           </Center>
         )}
 

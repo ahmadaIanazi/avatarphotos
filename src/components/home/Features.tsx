@@ -36,15 +36,15 @@ const Features = () => {
         maxWidth="container.lg"
       >
         <SimpleGrid mb={10} columns={{ base: 1, md: 3 }}>
-          <Item iconName="preview.svg" title="3. Prompt">
-            استخدم خيالك واكتب أي شي ترغب برؤيته <b>ويقوم التطبيق بوضعك في الصورة!</b>
+          <Item iconName="publish.svg" title="١. ارفع">
+            إرفع <b>صور لك</b> (أو لأي شخص آخر) بزوايل مختلفة لصنع الشخصية
           </Item>
-          <Item iconName="square.svg" title="2. Wait">
-            روح أشرب قهوة وروّق ويقوم التطبيق بصنع  <b>الستديو الخاص بك</b> والتدرب على الصور
+          <Item iconName="square.svg" title="٢. أنتظر">
+             أشرب قهوة وروّق ويقوم التطبيق بصنع  <b>الشخصية الخاصة بك</b> والتدرب عليها
           </Item>
-          <Item iconName="publish.svg" title="1. Upload">
-            إرفع <b>صور</b> لك (أو لأي شخص آخر) بزوايا مختلفة
-          </Item>
+          <Item iconName="preview.svg" title="٣. حمّل">
+              استخدم خيالك واكتب أي شي ترغب تكوينه على شخصيتك  <b>ويقوم التطبيق بوضعك في الصورة!</b>
+          </Item> 
         </SimpleGrid>
       </Flex>
     </Flex>
