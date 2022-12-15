@@ -32,10 +32,10 @@ const Pricing = () => {
         transition="all 250ms"
       >
         <Text mt={2} fontWeight="black" fontSize="4xl">
-          Why not Free?
+          لماذا غير مجاني؟
         </Text>
         <Text mt={2} mb={4}>
-          Training a custom AI model is expensive due to the resources required.
+          تدريب كمبيوتر الذكاء الإصنطاعي على صور معينه يكلفنا الكثير من الطاقة السحابية وأيضاً في كل مره تطلب فيها صورة جديدة خيالية تكّلفنا الكثير من المبالغ المالية لتجهيز السيرفرات السحابية لتحمل الطاقة لصنع هذه الحسابات الصورية المعقدة
         </Text>
       </Box>
       <Box
@@ -53,7 +53,7 @@ const Pricing = () => {
           color="black"
           backgroundColor="brand.500"
         >
-          1 Studio + {process.env.NEXT_PUBLIC_STUDIO_SHOT_AMOUNT} shots
+          شخصية + {process.env.NEXT_PUBLIC_STUDIO_SHOT_AMOUNT} صورة
         </Tag>
 
         <Box mt={2} fontWeight="black" fontSize="3.5rem">
@@ -65,20 +65,19 @@ const Pricing = () => {
             color="coolGray.400"
             fontSize="1.2rem"
           >
-            / studio
+            / شخصية
           </Box>
         </Box>
 
         <List mt={2} mb={4} spacing={1}>
           <CheckedListItem>
-            <b>1</b> Studio with a <b>custom trained model</b>
+            <b>1</b> شخصية <b> جاهزة لصنع صور </b>
           </CheckedListItem>
           <CheckedListItem>
-            <b>{process.env.NEXT_PUBLIC_STUDIO_SHOT_AMOUNT}</b> images
-            generation
+            <b>{process.env.NEXT_PUBLIC_STUDIO_SHOT_AMOUNT}</b> صور خاصة
           </CheckedListItem>
-          <CheckedListItem>Craft your own prompt</CheckedListItem>
-          <CheckedListItem>Sponsorship development 🖤</CheckedListItem>
+          <CheckedListItem>تستطيع كتابة ماترغب به بنفسك</CheckedListItem>
+          <CheckedListItem>صنع بالسعودية 🖤</CheckedListItem>
         </List>
       </Box>
     </SimpleGrid>

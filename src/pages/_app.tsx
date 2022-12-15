@@ -21,17 +21,23 @@ function App({
 }: AppProps<{ session: Session }>) {
   return (
     <ChakraProvider theme={theme}>
-      <SessionProvider session={session}>
-        <QueryClientProvider client={queryClient}>
-          <DefaultHead />
-          <Flex className={inter.className} flexDirection="column" minH="100vh">
-            <Header />
-            <Component {...pageProps} />
-            <Footer />
-            <Analytics />
-          </Flex>
-        </QueryClientProvider>
-      </SessionProvider>
+      <div dir="rtl">
+        <SessionProvider session={session}>
+          <QueryClientProvider client={queryClient}>
+            <DefaultHead />
+            <Flex
+              className={inter.className}
+              flexDirection="column"
+              minH="100vh"
+              >
+              <Header />
+              <Component {...pageProps} />
+              <Footer />
+              <Analytics />
+            </Flex>
+          </QueryClientProvider>
+        </SessionProvider>
+              </div>
     </ChakraProvider>
   );
 }

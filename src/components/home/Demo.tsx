@@ -6,18 +6,18 @@ import AvatarsPlaceholder from "./AvatarsPlaceholder";
 
 const examples = [
   {
-    label: "illustration of Tom in the style of Charles Burns",
+    label: "تشكيل لصورتي على ستايل شارلز برنت",
     imageUrl: "/shots/crumb.png",
   },
-  { label: "Painting of Tom by Edvard Munch", imageUrl: "/shots/munch.png" },
-  { label: "Portrait of Tom as Pixar character", imageUrl: "/shots/pixar.png" },
-  { label: "Portrait of Tom as Spiderman", imageUrl: "/shots/spiderman.jpg" },
-  { label: "Painting of Tom by Van Gogh", imageUrl: "/shots/vangogh.png" },
-  { label: "Portrait of Tom as a warrior", imageUrl: "/shots/warrior.png" },
-  { label: "Painting of Tom by Andy Warhol", imageUrl: "/shots/wharol.png" },
-  { label: "Portrait of Tom as Santa Claus", imageUrl: "/shots/santa.jpg" },
+  { label: "صورتي على شكل إدوارد منش", imageUrl: "/shots/munch.png" },
+  { label: "صورتي على شكل شخصية ديزني", imageUrl: "/shots/pixar.png" },
+  { label: "صورتي على شكل سبايدرمان", imageUrl: "/shots/spiderman.jpg" },
+  { label: "صورتي على شكل رسمه فان كوخ", imageUrl: "/shots/vangogh.png" },
+  { label: "صورتي ەلى شكل محارب", imageUrl: "/shots/warrior.png" },
+  { label: "صورتي على شكل رسمة آندي وارهول", imageUrl: "/shots/wharol.png" },
+  { label: "صورتي على شكل شخصية سانتا كلوز", imageUrl: "/shots/santa.jpg" },
   {
-    label: "painting of Tom by Gustav Klimt",
+    label: "صورتي على شكل شخصية قوستاف كليمت",
     imageUrl: "/shots/klimt.png",
   },
 ];
@@ -36,7 +36,7 @@ const Demo = () => {
         width="100%"
         marginX="auto"
         fontSize="md"
-        shadow="0 14px 40px 10px #B5FFD9, 0 5px 10px -7px black"
+        shadow="0 14px 40px 10px #f7d0dc, 0 5px 10px -7px black"
         borderRadius="md"
         py={2}
         px={3}

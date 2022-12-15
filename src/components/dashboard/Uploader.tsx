@@ -117,7 +117,7 @@ const Uploader = ({ handleOnAdd }: { handleOnAdd: () => void }) => {
         setUploadState("not_uploaded");
 
         toast({
-          title: "Studio created!",
+          title: "تم إنشاء الشخصية بنجاح !",
           duration: 3000,
           isClosable: true,
           position: "top-right",
@@ -149,34 +149,33 @@ const Uploader = ({ handleOnAdd }: { handleOnAdd: () => void }) => {
           </Box>
           <VStack textAlign="center" spacing={1}>
             <Box fontWeight="bold" fontSize="2xl">
-              Drag and drop or click to upload
+              إسحب أي صورة هنا أو إضغط لتحميل الصور
             </Box>
             <Box fontWeight="bold" fontSize="lg">
               <Highlight
                 query="10-20 pictures"
                 styles={{ bg: "brand.500", px: 1 }}
               >
-                Upload 10-20 pictures of you
+                إرفع ١٠ إلى ٢٠ صورة لك
               </Highlight>
             </Box>
             <Box maxWidth="container.sm">
               <Text mt={4}>
-                To get the best results, we suggest uploading 3 full body or
-                entire object photos, 5 medium shots of the chest and up, and 10
-                close-up photos and:
+                للحصول على أفضل النتائج، نقترح رفع ٣ صور للجسم كامله أو للعنصر كامل،
+                و خمسة صور متوسطه القرب من منتصف البطن إلى أعلى الرأس
+                و ١٠ صور قريبة للوجه و لاتنسى
               </Text>
             </Box>
             <Box>
               <List mt={4} textAlign="left">
                 <CheckedListItem>
-                  Mix it up - change body pose, background, and lighting in each
-                  photo
+                  أن تقوم بتغيير الوضعيات و الخلفيات والإضاءه في كل صورة 
                 </CheckedListItem>
                 <CheckedListItem>
-                  Capture a range of expressions
+                  وغير تعابير الوجه في كل صورة
                 </CheckedListItem>
                 <CheckedListItem>
-                  {`Show the subject's eyes looking in different directions`}
+                  {`وحتى العيون حاول أن تنظر لأماكن مختلفة ليس فقط إتجاه العدسه`}
                 </CheckedListItem>
               </List>
             </Box>
@@ -241,7 +240,7 @@ const Uploader = ({ handleOnAdd }: { handleOnAdd: () => void }) => {
             onClick={handleUpload}
             variant="brand"
           >
-            Upload {files.length} image{files.length > 1 && "s"}
+            رفع {files.length} صوره{files.length > 1 && "s"}
           </Button>
         </Box>
       )}
@@ -267,7 +266,7 @@ const Uploader = ({ handleOnAdd }: { handleOnAdd: () => void }) => {
               onChange={(e) => setInstanceName(e.currentTarget.value)}
             />
             <FormHelperText color="blackAlpha.600">
-              This name will be use to name your person in your prompt:{" "}
+              هذا الإسم سوف يتم إستخدامة في كتابة الخيال وصنع الصور استخدم اسم مميز وباللغة الإنجليزي فقط:{" "}
               <b>{`Painting of ${
                 instanceName || "Alice"
               } ${instanceClass} by Andy Warhol`}</b>
@@ -280,15 +279,15 @@ const Uploader = ({ handleOnAdd }: { handleOnAdd: () => void }) => {
               onChange={(e) => setInstanceClass(e.currentTarget.value)}
               backgroundColor="white"
             >
-              <option value="man">Man</option>
-              <option value="woman">Woman</option>
-              <option value="child">Child</option>
-              <option value="dog">Dog</option>
-              <option value="cat">Cat</option>
-              <option value="couple">Couple</option>
+              <option value="man">رجل</option>
+              <option value="woman">أمرأه</option>
+              <option value="child">طفل</option>
+              {/* <option value="dog">كلب</option>
+              <option value="cat">قطه</option> */}
+              <option value="couple">زوّج</option>
             </Select>
             <FormHelperText color="blackAlpha.600">
-              Type of the subject
+              نوع الشخصية
             </FormHelperText>
           </FormControl>
           <Box>
@@ -303,7 +302,7 @@ const Uploader = ({ handleOnAdd }: { handleOnAdd: () => void }) => {
                 }
               }}
             >
-              Create your Studio
+              إصنع الشخصية
             </Button>
           </Box>
         </SimpleGrid>

@@ -34,7 +34,7 @@ const Hero = () => {
               fontSize={{ base: "2.6rem", sm: "4rem" }}
               fontWeight="black"
             >
-              Your AI avatars Studio
+              صور عرض ابداعية
             </Box>
             <Box
               as="h2"
@@ -42,8 +42,8 @@ const Hero = () => {
               fontSize={{ base: "xl", sm: "3xl" }}
               lineHeight={{ base: "xl", sm: "3xl" }}
             >
-              <b>Unleash your creativity</b> and become{" "}
-              <b>a digital masterpiece</b>
+              <b>حرر إبداعك</b> وإجعل نفسك{" "}
+              <b>تحفة فنية تقنية</b>
             </Box>
           </Box>
           <Button
@@ -54,7 +54,7 @@ const Hero = () => {
             shadow="xl"
             rightIcon={<HiArrowRight />}
           >
-            Start Creating Now
+            إبدا بصنع صورة لك الآن
           </Button>
         </VStack>
         <Flex alignItems="center">

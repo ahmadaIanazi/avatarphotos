@@ -97,7 +97,7 @@ const StudioPage = ({ project }: IStudioPageProps) => {
           href="/dashboard"
           as={Link}
         >
-          Back to Dashboard
+          العود لصفحتي
         </Button>
       </Box>
       <Box
@@ -107,8 +107,8 @@ const StudioPage = ({ project }: IStudioPageProps) => {
         backgroundColor="white"
       >
         <Text fontSize="2xl" fontWeight="semibold">
-          Studio <b>{project.instanceName}</b>{" "}
-          <Badge colorScheme="teal">{shotCredits} shots left</Badge>
+          استديو <b>{project.instanceName}</b>{" "}
+          <Badge colorScheme="teal">{shotCredits} لقطات متقبيه</Badge>
         </Text>
         <Text textTransform="capitalize" fontSize="sm">
           {formatRelative(new Date(project.createdAt), new Date())}
@@ -150,11 +150,11 @@ const StudioPage = ({ project }: IStudioPageProps) => {
             rightIcon={<FaMagic />}
             isLoading={isLoading}
           >
-            Generate
+            أصنع
           </Button>
         </Flex>
         <Text fontSize="md">
-          <Icon as={BsLightbulb} /> Use the keyword{" "}
+          <Icon as={BsLightbulb} /> استخدم هذه الكلمه{" "}
           <b>
             {project.instanceName}{" "}
             {getRefinedInstanceClass(project.instanceClass)}
@@ -194,7 +194,7 @@ const StudioPage = ({ project }: IStudioPageProps) => {
                   refetch();
                 }}
               >
-                Load more
+                أكثر 
               </Button>
             </Box>
           )}

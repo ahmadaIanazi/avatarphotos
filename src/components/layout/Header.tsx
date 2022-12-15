@@ -3,6 +3,7 @@ import {
   Flex,
   HStack,
   Icon,
+  Image,
   IconButton,
   Popover,
   Text,
@@ -34,17 +35,13 @@ const Header = () => {
           fontWeight="bold"
           fontSize="2xl"
         >
-          <Icon
-            transition="200ms all"
-            _groupHover={{ color: "brand.500" }}
-            as={IoIosFlash}
-          />
-          <Text display={{ base: "none", sm: "inherit" }}>Photoshot.</Text>
+          <Image src="../../../public/favicon.png"/>
+          <Text display={{ base: 'none', sm: 'inherit' }}>Wojoh.</Text>
         </Flex>
         {session ? (
           <HStack>
             <Button href="/dashboard" as={Link} variant="brand" size="sm">
-              Dashboard
+              ملفي
             </Button>
             <Tooltip hasArrow label="Public gallery">
               <Button
@@ -52,27 +49,27 @@ const Header = () => {
                 as={Link}
                 variant="outline"
                 size="sm"
-                _hover={{ bg: "brand.500" }}
+                _hover={{ bg: 'brand.500' }}
               >
-                My Gallery
+                المفضلة
               </Button>
             </Tooltip>
             <Tooltip hasArrow label="Logout">
               <IconButton
-                _hover={{ bg: "brand.500" }}
+                _hover={{ bg: 'brand.500' }}
                 aria-label="logout"
                 icon={<HiLogout />}
                 size="sm"
                 variant="ghost"
                 onClick={() => {
-                  signOut({ callbackUrl: "/" });
+                  signOut({ callbackUrl: '/' });
                 }}
               />
             </Tooltip>
           </HStack>
         ) : (
           <Button href="/login" as={Link} variant="brand" size="sm">
-            Login
+            دخول
           </Button>
         )}
       </Flex>

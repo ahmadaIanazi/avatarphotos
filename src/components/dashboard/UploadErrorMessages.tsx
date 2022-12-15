@@ -8,7 +8,7 @@ const UploadErrorMessages = ({
 }) => {
   return (
     <Box mt={2} color="red.500">
-      <Text fontWeight="bold">There are some errors with your images:</Text>
+      <Text fontWeight="bold">هناك بعض الأخطاء في الصور:</Text>
       {messages?.map((errorMessage) => (
         <Box key={errorMessage}>
           {errorMessage

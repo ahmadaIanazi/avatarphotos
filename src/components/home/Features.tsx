@@ -36,15 +36,14 @@ const Features = () => {
         maxWidth="container.lg"
       >
         <SimpleGrid mb={10} columns={{ base: 1, md: 3 }}>
-          <Item iconName="publish.svg" title="1. Upload">
-            Upload <b>some selfies</b> of you (or other person) with different
-            angles
+          <Item iconName="preview.svg" title="3. Prompt">
+            استخدم خيالك واكتب أي شي ترغب برؤيته <b>ويقوم التطبيق بوضعك في الصورة!</b>
           </Item>
           <Item iconName="square.svg" title="2. Wait">
-            Take a coffee while we build <b>your studio</b> based on your photos
+            روح أشرب قهوة وروّق ويقوم التطبيق بصنع  <b>الستديو الخاص بك</b> والتدرب على الصور
           </Item>
-          <Item iconName="preview.svg" title="3. Prompt">
-            Use your imagination to craft the <b>perfect prompt!</b>
+          <Item iconName="publish.svg" title="1. Upload">
+            إرفع <b>صور</b> لك (أو لأي شخص آخر) بزوايا مختلفة
           </Item>
         </SimpleGrid>
       </Flex>
