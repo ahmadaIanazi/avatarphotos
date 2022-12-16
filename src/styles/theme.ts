@@ -1,5 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 
+import "@fontsource/noto-sans-arabic"
+
 const theme = extendTheme({
   colors: {
     brand: {
@@ -23,10 +25,13 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: `'Inter', sans-serif`,
-    body: `'Inter', sans-serif`,
+    heading: "Noto Sans Arabic",
+    body: "Noto Sans Arabic",
   },
   components: {
+    Text:{
+      
+    },
     Button: {
       variants: {
         brand: {

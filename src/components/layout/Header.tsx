@@ -37,15 +37,27 @@ const Header = () => {
           fontSize="2xl"
         >
           <Image src={favicon} width={30} height={30} alt="Wojoh logo" />
-          <Text display={{ base: 'none', sm: 'inherit' }}>وجوه</Text>
+          <Text
+            fontFamily="Noto Sans Arabic"
+            display={{ base: 'none', sm: 'inherit' }}
+          >
+            وجوه
+          </Text>
         </Flex>
         {session ? (
           <HStack>
-            <Button href="/dashboard" as={Link} variant="brand" size="sm">
+            <Button
+              fontFamily="Noto Sans Arabic"
+              href="/dashboard"
+              as={Link}
+              variant="brand"
+              size="sm"
+            >
               ملفي
             </Button>
             <Tooltip hasArrow label="Public gallery">
               <Button
+                fontFamily="Noto Sans Arabic"
                 href={`/gallery/${session.userId}`}
                 as={Link}
                 variant="outline"
@@ -69,7 +81,13 @@ const Header = () => {
             </Tooltip>
           </HStack>
         ) : (
-          <Button href="/login" as={Link} variant="brand" size="sm">
+          <Button
+            fontFamily="Noto Sans Arabic"
+            href="/login"
+            as={Link}
+            variant="brand"
+            size="sm"
+          >
             دخول
           </Button>
         )}

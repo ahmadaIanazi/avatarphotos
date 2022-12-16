@@ -11,6 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 import DefaultHead from "@/components/layout/DefaultHead";
 
 import "react-medium-image-zoom/dist/styles.css";
+import '@fontsource/noto-sans-arabic';
 
 const queryClient = new QueryClient();
 const inter = Inter({ subsets: ["latin"] });
@@ -26,10 +27,11 @@ function App({
           <QueryClientProvider client={queryClient}>
             <DefaultHead />
             <Flex
+              fontFamily="Noto Sans Arabic"
               className={inter.className}
               flexDirection="column"
               minH="100vh"
-              >
+            >
               <Header />
               <Component {...pageProps} />
               <Footer />
@@ -37,7 +39,7 @@ function App({
             </Flex>
           </QueryClientProvider>
         </SessionProvider>
-              </div>
+      </div>
     </ChakraProvider>
   );
 }

@@ -17,6 +17,7 @@
     "@emotion/cache": "^11.10.5",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fontsource/noto-sans-arabic": "^4.5.13",
     "@next-auth/prisma-adapter": "^1.0.5",
     "@next/font": "^13.0.6",
     "@prisma/client": "^4.7.1",
