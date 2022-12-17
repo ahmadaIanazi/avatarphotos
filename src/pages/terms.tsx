@@ -16,75 +16,70 @@ const Terms = () => {
         alignItems="flex-start"
       >
         <Text fontWeight="bold" fontSize="3xl">
-          Photoshot Privacy Policy
+          سياسة خصوصية وجوه
         </Text>
 
         <Text>
-          It is Photoshot&#39;s policy to respect your privacy and comply with
-          any applicable law and regulation regarding any personal information
-          we may collect about you, including across our website,{' '}
+          تتمثل سياسة وجوه في احترام خصوصيتك والامتثال لها أي قانون ولوائح معمول
+          بها فيما يتعلق بأي معلومات شخصية قد نجمع معلومات عنك ، بما في ذلك عبر
+          موقعنا الإلكتروني ،{' '}
           <Link textDecoration="underline" href="https://photoshot.app/">
-            https://photoshot.app/
+            https://wojoh.art/
           </Link>
-          , and other sites we own and operate.{' '}
+          , واي تطبيق أو موقع آخر مرتبط.{' '}
         </Text>
         <Text>
-          This policy is effective as of 14 December 2022 and was last updated
-          on 14 December 2022.{' '}
+          هذه السياسة سارية اعتبارًا من 14 ديسمبر 2022 وتم تحديثها آخر مرة في 14
+          ديسمبر 2022.{' '}
         </Text>
         <Text fontWeight="bold" fontSize="xl">
-          Photos upload
+          رفع الصور
         </Text>
         <Text>
-          To upload photos to this site, you must ensure that they are of
-          yourself, that you own the rights to them, and that they are not naked
-          or pornographic. We are not responsible for any harm that may result
-          from uploading photos that do not meet these criteria.
+          لتحميل الصور على هذا الموقع ، يجب عليك التأكد من أنها من لنفسك ، وأنك
+          تملك حقوقهم ، وأنهم ليسوا عراة أو إباحي. نحن لسنا مسؤولين عن أي ضرر قد
+          ينتج من تحميل الصور التي لا تستوفي هذه المعايير.
         </Text>
 
         <Text fontWeight="bold" fontSize="xl">
-          Information We Collect
+          المعلومات التي نجمعها
         </Text>
         <Text>
-          Information we collect includes both information you knowingly and
-          actively provide us when using or participating in any of our services
-          and promotions, and any information automatically sent by your devices
-          in the course of accessing our products and services.{' '}
+          تتضمن المعلومات التي نجمعها كلًا من المعلومات التي تعرفها عن علم و
+          تزويدنا بنشاط عند استخدام أو المشاركة في أي من خدماتنا والعروض
+          الترويجية وأي معلومات ترسلها أجهزتك تلقائيًا في سياق الوصول إلى
+          منتجاتنا وخدماتنا.{' '}
         </Text>
         <Text fontWeight="semibold" fontSize="md">
-          Log Data
+          تسجيل البيانات
         </Text>
         <Text>
-          When you visit our website, our servers may automatically log the
-          standard data provided by your web browser. It may include your
-          device’s Internet Protocol (IP) address, your browser type and
-          version, the pages you visit, the time and date of your visit, the
-          time spent on each page, other details about your visit, and technical
-          details that occur in conjunction with any errors you may encounter.{' '}
+          عندما تزور موقعنا على الويب ، قد تقوم خوادمنا تلقائيًا بتسجيل الدخول
+          البيانات القياسية التي يوفرها متصفح الويب الخاص بك. قد يشمل الخاص بك
+          عنوان بروتوكول الإنترنت (IP) الخاص بالجهاز ونوع متصفحك و الإصدار
+          والصفحات التي تزورها ووقت وتاريخ زيارتك و الوقت الذي تقضيه في كل صفحة
+          ، وتفاصيل أخرى حول زيارتك ، وتقنية التفاصيل التي تحدث بالتزامن مع أي
+          أخطاء قد تواجهها.{' '}
         </Text>
         <Text>
-          Please be aware that while this information may not be personally
-          identifying by itself, it may be possible to combine it with other
-          data to personally identify individual persons.{' '}
+          يرجى العلم أنه في حين أن هذه المعلومات قد لا تكون شخصية تحديده من
+          تلقاء نفسه ، قد يكون من الممكن دمجه مع الآخرين البيانات لتحديد الأفراد
+          شخصيا.{' '}
         </Text>
         <Text fontWeight="semibold" fontSize="md">
-          Personal Information
+          معلومات شخصية
         </Text>
-        <Text>
-          We may ask for personal information which may include one or more of
-          the following:{' '}
-        </Text>
+        <Text>قد نطلب معلومات شخصية قد تتضمن واحدًا أو أكثر من ما يلي: </Text>
         <List listStyleType="initial" pl={4}>
-          <ListItem>Email</ListItem>
+          <ListItem>البريد الإلكتروني</ListItem>
         </List>
         <Text fontWeight="semibold" fontSize="md">
-          Legitimate Reasons for Processing Your Personal Information
+          أسباب مشروعة لمعالجة معلوماتك الشخصية
         </Text>
         <Text>
-          We only collect and use your personal information when we have a
-          legitimate reason for doing so. In which instance, we only collect
-          personal information that is reasonably necessary to provide our
-          services to you.{' '}
+          نحن نجمع معلوماتك الشخصية ونستخدمها فقط عندما يكون لدينا ملف سبب مشروع
+          للقيام بذلك. في هذه الحالة ، نجمع فقط المعلومات الشخصية التي تعتبر
+          ضرورية بشكل معقول لتقديم الخدمات لك.{' '}
         </Text>
         <Text fontWeight="semibold" fontSize="md">
           Collection and Use of Information

@@ -49,15 +49,15 @@ export default function Footer() {
         <Text></Text>
         <Stack alignItems="center" direction="row" spacing={4}>
           <Text fontSize="sm">
-            <Link href="/terms">Terms and Privacy</Link>
+            <Link href="/terms">الأحكام والخصوصية</Link>
           </Text>
           <Text fontSize="sm">
-            <Link href="/faq">FAQ</Link>
+            <Link href="/faq">الأسئلة الشائعة</Link>
           </Text>
-          <SocialButton href="https://github.com/shinework/photoshot">
+          {/* <SocialButton href="https://github.com/shinework/ahmadaianazi">
             <FaGithub />
-          </SocialButton>
-          <SocialButton href="https://twitter.com/photoshot_ai">
+          </SocialButton> */}
+          <SocialButton href="https://twitter.com/ahmadaianazi">
             <FaTwitter />
           </SocialButton>
           <SocialButton href="mailto:support@photoshot.app">
